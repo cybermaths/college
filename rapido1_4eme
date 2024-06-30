@@ -1,0 +1,77 @@
+\documentclass{article}
+\usepackage{graphicx} % Required for inserting images
+\usepackage{fontspec,ProfCollege}
+\usepackage[inline]{asymptote}
+
+\usepackage{tikz,amsfonts,amsmath,amssymb,amsthm,siunitx}
+
+\usepackage{fancyhdr}
+
+\pagestyle{empty}
+
+
+\usepackage[left=1cm]{geometry}
+
+
+\title{Rapido 1 4eme}
+\author{aslam moussajee}
+
+\date{June 2024}
+
+\begin{document}
+
+\Rapido[Largeur=\linewidth,Titre= Rapido n°\thetcbcounter\hspace{0.5cm} Classe :\hspace{1.5cm} Nom \& Prénom :]{%
+$975$ est divisible par $3$ (V ou F) / \BoiteRapido{}
+§$975$ est divisible par $9$ (V ou F) / \BoiteRapido{}
+§Un nombre est divisible par $5$ s'il se termine par / \BoiteRapido{}
+§$936$ est divisible par $2$ et par $3$ (V ou F) / \BoiteRapido{}
+§La fraction $\dfrac{75}{975}$ est plus petite que $1$ (V ou F) / \BoiteRapido{}
+§La fraction $\dfrac{-975}{75}$ est plus petite que $1$ (V ou F) / \BoiteRapido{}
+§$\dfrac{1}{3}+\dfrac{2}{5}=$/ \BoiteRapido{}
+§\begin{tikzpicture}[scale=0.5]
+    \draw (0,0) -- (5,0) -- (5,3) -- cycle;
+    \draw (0,0) node[left]{$A$};
+    \draw (4.7,0) --++ (0,0.3) --++ (0.3,0);
+    \draw (5,0) node[right]{$B$};
+    \draw (5,3) node[right]{$C$};
+    \draw (6,4) node{Combien d'axes de symétrie possède cette figure ?};
+\end{tikzpicture} / \BoiteRapido{}
+§\begin{tikzpicture}[scale=0.5]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (5,0);
+    \coordinate (C) at (5,2);
+    \coordinate (D) at (0,2);
+    \draw (A) node[left]{$A$};
+    \draw (D) node[left]{$D$};
+    \draw (B) node[right]{$B$};
+    \draw (C) node[right]{$C$};
+    \draw (A) rectangle (C);
+    \draw[thick] (A) -- (C);
+    \draw[thick] (B) -- (D);
+    \draw (2.5,1) node[above]{$P$};
+    \draw (6,3) node{ABCD étant un rectangle, D est le symétrique de B par la symétrie};
+    \draw (9.5,2) node{d'axe $(AC)$};
+    \draw (9.5,1) node{(V ou F)};
+\end{tikzpicture}  / \BoiteRapido{}
+§\begin{tikzpicture}[scale=0.5]
+    \coordinate (A) at (0,0);
+    \coordinate (B) at (5,0);
+    \coordinate (C) at (5,2);
+    \coordinate (D) at (0,2);
+    \draw (A) node[left]{$A$};
+    \draw (D) node[left]{$D$};
+    \draw (B) node[right]{$B$};
+    \draw (C) node[right]{$C$};
+    \draw (A) rectangle (C);
+    \draw[thick] (A) -- (C);
+    \draw[thick] (B) -- (D);
+    \draw (2.5,1) node[above]{$P$};
+    \draw (6,3) node{ABCD étant un rectangle, D est le symétrique de B par la symétrie};
+    \draw (9.5,2) node{de centre $P$};
+    \draw (9.5,1) node{(V ou F)};
+\end{tikzpicture}  / \BoiteRapido{}
+}
+
+
+
+\end{document}
